@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+div {
+    min-height: 100vh;
+    color: yellow;;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.big-img {
+    background: url(./Images/hongkong.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ 
+}
+.small-img {
+    background: url(./Images/about.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.folder-img {
+    background: url(./Images/hongkong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}

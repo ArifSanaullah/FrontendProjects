@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+
+  <!-- custome css -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/5c2d7d8e36.js"></script>
+
+<!-- owl-carousel -->
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" type="text/css">
+
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="panel">
+      <div class="row">
+        <div class="col liquid">
+          <h4> <i class="fas fa-drafting-compass"></i>Ready Co.</h4>
+
+          <!-- Owl-carousel -->
+          
+          <div class="owl-carousel owl-theme">
+            <img src="./assets/undraw_authentication_fsn5.svg" class="login_img">
+            <img src="./assets/undraw_fingerprint_swrc.svg" class="login_img">
+            <img src="./assets/undraw_personal_data_29co.svg" class="login_img">
+          </div>
+          <div class="follow">Follow Us <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i></div>
+          <i class="fa"></i>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+  <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <!-- jquery function -->
+
+  <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:100,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+  </script>
+
+</body>
+</html>

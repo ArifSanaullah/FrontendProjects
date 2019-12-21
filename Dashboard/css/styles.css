@@ -1,0 +1,305 @@
+:root {
+  --lightblue: rgb(94, 150, 253);
+  --extralightblue: rgb(234, 241, 248);
+  --blue: rgb(72, 145, 255);
+  --blueishgray: rgb(237, 245, 248);
+  --gray: rgb(196, 196, 196);
+  --gray-shadow: 10px 0px 20px var(--gray);
+  --black: #1d1d1d;
+  --whitishlightblue: rgb(244, 248, 252);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  background: var(--blueishgray);
+}
+a {
+  text-decoration: none;
+  font-size: 0.75em;
+  color: var(--lightblue);
+}
+img {
+  width: 100px;
+}
+.main-container {
+  margin: 0px;
+  padding: 0px;
+  background: var(--blueishgray);
+}
+.left-section {
+  float: left;
+  max-width: 15em;
+  min-width: 12em;
+  height: 100%;
+  background: var(--extralightblue);
+  margin: 20px 0px 20px 20px;
+  border-radius: 1.5em;
+  box-shadow: 15px 0px 30px 10px var(--gray);
+  /* display: inline-block; */
+  z-index: 200;
+}
+.left-section .logo img {
+  width: 50px;
+  margin: 7px 10px;
+  cursor: pointer;
+}
+
+.logo a {
+  position: absolute;
+  top: 2em;
+  font-size: 1.2em;
+  color: var(--black);
+  font-weight: lighter;
+}
+.nav li {
+  list-style: none;
+  padding: 7px 0px;
+  position: relative;
+
+  left: -1em;
+}
+.nav a {
+  font-size: 1.2em;
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  padding: 5px 15px;
+  display: block;
+}
+.nav a:hover {
+  box-shadow: inset 0px 0.75px 3px var(--gray),
+    1px 1px 3px var(--whitishlightblue);
+  border-radius: 0.5em;
+  background: var(--whitishlightblue);
+  transition: background 0.3s ease-out;
+  /* transition:  box-shadow 0.1s ease-in-out; */
+}
+.user-details {
+  text-align: center;
+  margin: auto;
+  margin-top: 3em;
+}
+.user-details .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.user-details h1,
+.user-details p {
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.user-details a {
+  display: block;
+  font-size: 0.9em;
+}
+.user-details input[type="button"] {
+  background: var(--blue);
+  border-radius: 0.5em;
+  padding: 8px 20px;
+  border: none;
+  color: var(--whitishlightblue);
+  font-weight: 550;
+  font-size: 0.75em;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin: 1em 0px 2.5em 0px;
+}
+
+.right-section {
+  width: 80%;
+  height: 85%;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 180;
+}
+.right-section .top {
+  width: 96%;
+  margin-left: 1em;
+}
+.right-section .top .left-top {
+  display: inline-block;
+  width: 48%;
+}
+.left-top h1 {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: lighter;
+  clear: both;
+}
+.left-top span {
+  text-align: center;
+  margin: auto;
+  margin-left: 1.5em;
+  display: inline-block;
+}
+.top .right-top {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 0px;
+  position: relative;
+  width: 48%;
+  transform: translateX(7%);
+}
+.right-top select,
+.right-top input[type="date"] {
+  background: var(--blueishgray);
+  padding: 7px 4px;
+  border-radius: 0.5em;
+  outline: none;
+  border: none;
+  box-shadow: inset 1px 1px 3px var(--gray), 1px 1px 3px #ffffff;
+  width: 8em;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
+}
+.right-top input[type="date"] {
+  width: 15em;
+  max-width: 15em;
+  min-width: 10em;
+}
+.right-top select {
+  width: 15.6em;
+  padding: 8.5px 4px;
+}
+.containers {
+  display: inline-block;
+  margin-top: 2em;
+}
+.container-one .cards {
+  display: inline-block;
+}
+.cards .card {
+  display: inline-block;
+  min-width: auto;
+  max-width: 17em;
+  height: 8em;
+  background: var(--blueishgray);
+  border-radius: 2em;
+  box-shadow: inset 2px 2px 5px 0px rgb(213, 213, 219),
+    2px 1.5px 10px 0px #ffffff;
+  padding: 1em 1.5em;
+  margin: 0.5em 0.75em;
+}
+.card .left-card {
+  width: 30%;
+  height: 60%;
+  box-shadow: inset 2px 2px 5px 0px rgb(213, 213, 219), 1px 3px 3px #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(-5%);
+}
+.card .left-card img {
+  width: 80%;
+  height: 80%;
+  margin: 50% 0px 0px 50%;
+  transform: translate(-50%, -50%);
+}
+.card:last-child {
+  box-shadow: 5px 5px 15px 0px rgb(213, 213, 219);
+}
+.card .right-card {
+  position: relative;
+  top: -1em;
+  left: 0em;
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  transform: translateX(30%);
+  line-height: 1em;
+}
+.container-two, .container-three {
+  display: inline-block;
+  width: 95%;
+  height: auto;
+  background: var(--blueishgray);
+  border-radius: 2em;
+  box-shadow: inset 2px 2px 5px 0px rgb(213, 213, 219),
+    2px 1.5px 10px 0px #ffffff;
+  margin-top: 1.3em;
+  margin-left: 1em;
+}
+.container-two .menu {
+  display: inline-block;
+}
+.menu ul li {
+  border-radius: 2em;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: inset 0px 0.75px 3px var(--gray),
+    1px 1px 3px var(--whitishlightblue);
+  border-radius: 0.5em;
+  background: var(--whitishlightblue);
+  margin: 0.5em 0.5em;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+}
+.container-two .clicks {
+  display: block;
+
+}
+.clicks ul li {
+  list-style: none;
+  height: 100%;
+  width: auto;
+  margin: 2% 0%;
+}
+.container-two .dates {
+  margin: 0 3em;
+}
+.dates ul {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.dates ul li {
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+  margin: 1em 0.5em;
+  position: relative;
+}
+.dates ul li::after {
+  content: "";
+  width: 20px;
+  height: 100px;
+  background: var(--lightblue);
+  position: absolute;
+  top: -8em;
+  left: 0.5em;
+}
+.container-three {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 97%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.container-three .card {
+  display: inline-block;
+  min-width: 3em;
+  max-width: 10em;
+  height: 5em;
+  background: var(--blueishgray);
+  border-radius: 2em;
+  box-shadow: inset 2px 2px 5px 0px rgb(213, 213, 219),
+    2px 1.5px 10px 0px #ffffff;
+  padding: 1em 1.5em;
+  margin: 2em 0em;
+  text-align: center;
+  overflow: hidden;
+}
+.container-three .card .left-card {
+  width: 30%;
+  box-shadow: none;
+  display: inline-block;
+}
+.container-three .card .right-card {
+  width: 60%;
+  transform: translateX(0em);
+}

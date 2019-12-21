@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Parallax | HTML | CSS</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="#" class="logo">NatureComp</a>
+
+        <nav>
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </nav>
+      </header>
+      <h1 class="nature lax" data-lax-translate-y="0 0, 400 -400">
+        Preserved Nature
+      </h1>
+    </div>
+
+    <div class="line lax" data-lax-opacity="0 1, 100 0"></div>
+
+    <div
+      class="container secondary lax"
+      data-lax-translate-y="0 0, 650 -850"
+      data-lax-opacity="0 0, 450 1"
+    >
+      <h2>Strategic</h2>
+      <p class="subtext">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptas
+        odit ea aperiam blanditiis sequi non numquam laborum voluptatum natus
+        magni quod, id pariatur aspernatur nam tempora neque esse aliquid.
+      </p>
+      <p class="subtext">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aperiam
+        inventore consequuntur consectetur facere voluptates! Distinctio
+        adipisci vitae, dignissimos odit quam iusto incidunt cupiditate illo
+        culpa numquam pariatur error corporis?
+      </p>
+    </div>
+
+    <img
+      src="./images/lee-roylland-dfZbts6B4yw-unsplash.jpg"
+      alt="Mountains"
+      class="mountains lax"
+      data-lax-translate-y="0 1, 400 -300"
+    />
+    <img
+      src="./images/aaron-burden-oWyzKTEOCZg-unsplash.jpg"
+      alt="trees"
+      class="trees lax"
+      data-lax-translate-y="0 1, 400 -400"
+    />
+
+    <!-- laxx.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/5c2d7d8e36.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custome javascript to initialize laxx.js cdn -->
+    <script>
+      window.onload = function() {
+        lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+      };
+    </script>
+  </body>
+</html>

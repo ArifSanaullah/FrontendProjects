@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgb(2, 107, 102);
+    background-image: image()
+}
+.welcome {
+    background-image: url(./third-main.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+#header h1 {
+    font-size: 70px;
+    line-height: 1;
+}
+#header p{
+    font-size: 24px;
+    line-height: 1.2;
+}
+#header .main-btn {
+    font-size: 20px;
+    color: rgb(2, 107, 102);
+    text-decoration: none;
+    border: 0.25vh solid rgba(2, 107, 102, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+#header .main-btn:hover {
+    background: rgba(2, 107, 102);
+    color: white;
+}
+#section-a {
+    padding: 20px;
+    background: rgb(2, 107, 102);
+    color: #fff;
+    text-align: center;
+}
+#section-b {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+#section-c{
+    display: flex;
+}
+#section-c div{
+    padding: 25px;
+}
+#section-c .box1, .box3{
+    background: rgb(2, 107, 102);
+    color: white;
+}
+#section-c .box2{
+    background: #f9f9f9;
+}

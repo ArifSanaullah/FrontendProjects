@@ -1,0 +1,195 @@
+@font-face {
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-family: open-sans-regular;
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+  font-family: open-sans-bold;
+}
+:root {
+  --opensansregular: open-sans-regular, sans-serif;
+  --opensansbold: open-sans-bold, Arial;
+  --blue: #3b5998;
+  --light-blue: #8b9dc3;
+  --extralightblue: #d4d4dd;
+  --gray: #f0f0f0;
+  --white: #ffffff;
+}
+body {
+  background: var(--gray);
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--opensansregular);
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.main-container {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.header {
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--opensansregular);
+  border-bottom: 1px solid #3b5998;
+  width: 100%;
+  display: inline-block;
+  align-items: stretch;
+  padding: 0px 0px 30px 0px;
+}
+.logo {
+  display: inline-block;
+  margin-top: 0%;
+  transform: translateY(30%);
+  text-align: center;
+  font-family: var(--opensansbold);
+  width: 50%;
+}
+.logo h1 {
+  margin-inline-start: -50%;
+  margin-top: 1vh;
+  float: left;
+  position: relative;
+  left: 20vw;
+}
+.right-header {
+  float: right;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  letter-spacing: 0.3px;
+}
+.right-header form {
+  float: right;
+  transform: translateX(4%);
+}
+.right-header form input[type="text"],
+.right-header form input[type="password"] {
+  padding: 2px 3px;
+  margin: 4px 8px;
+  width: 25vw;
+  max-width: 170px;
+  padding-left: 7px;
+}
+.left,
+.right {
+  display: inline-block;
+  transform: translate(0, 40%);
+  text-align: left;
+}
+.left label[for="email"],
+.right label[for="log-password"],
+.right a {
+  margin-left: 5px;
+}
+.header form label,
+.right a {
+  display: block;
+}
+.right input[type="submit"] {
+  display: inline-block;
+  background: var(--light-blue);
+  color: var(--white);
+  padding: 2px 3px;
+  margin: 2px 0px;
+  width: 50px;
+  /* position: relative; */
+
+  /* top: 31%;
+  left: 100%; */
+}
+.header form input[type="checkbox"] {
+  display: block;
+  position: absolute;
+  margin: 3px 0px 0px 5px;
+}
+.logged {
+  margin-left: 20px;
+}
+.left-container {
+  float: left;
+  width: 40%;
+  height: 100vh;
+  margin-right: 50px;
+}
+.left-container p {
+  color: var(--blue);
+  font-family: var(--opensansregular);
+  font-weight: 550;
+}
+.left-container .image img {
+  width: 100%;
+  position: relative;
+  top: -20px;
+  max-height: 400px;
+  margin-right: 40%;
+}
+.right-container {
+  width: 50%;
+  float: right;
+}
+.right-container form {
+  width: 70%;
+  height: 100%;
+  float: right;
+  border-bottom: 3px solid var(--extralightblue);
+}
+.right-container form input {
+  display: inline-block;
+  margin: 5px 10px 5px 3px;
+  padding: 5px 3px 5px 10px;
+  border-radius: 5px;
+  width: 90%;
+  border: 1.5px solid #dfe3ff;
+}
+.right-container .username {
+  width: 100%;
+}
+
+.right-container .username input {
+  width: 40%;
+}
+
+.username input[name="l_name"] {
+  display: inline-block;
+}
+.right-container form input[type="date"] {
+  width: 42%;
+}
+.right-container form input[type="radio"] {
+  display: inline-block;
+  width: fit-content;
+  margin: 5px 5px 0px 0px;
+}
+.right-container form input[value="female"] {
+  margin-left: 10px;
+}
+.right-container .gendre {
+  margin: 10px 0px 35px 5px;
+}
+.gendre ~ p {
+  width: 95%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.gendre ~ p ~ input[type="submit"] {
+  background: rgb(43, 148, 11);
+  width: 50%;
+  color: #ffffff;
+  font-family: var(--opensansbold);
+  text-align: center;
+  cursor: pointer;
+}
+.border ~ a{
+  color: #3b5998;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}

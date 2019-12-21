@@ -1,0 +1,25 @@
+/* font-size, family */
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Montserrat&display=swap');
+body {
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.main {
+    font-family: 'Montserrat', cursive;
+}
+/* google fonts */
+.one {
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 50px;
+}
+.two {
+    font-weight: bolder;
+    font-style: oblique;
+}
+.subheading {
+    font-style: normal;
+    text-align: right
+}

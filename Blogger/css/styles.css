@@ -1,0 +1,123 @@
+
+@import url(../css/fonts.css);
+
+html,body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+:root {
+    /* theme colors */
+    --text-gray: #3f4954;
+    --text-light: #6866da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #104f55;
+    /* gradient colors */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* theme font families */
+    --abel: 'abel', cursive;
+    --big: 'big', cursive;
+    --montserrat: 'montserrat', cursive;
+    --gothic: 'gothic', cursive;
+}
+
+/* ---------Global Classes----------- */
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* -----x----Global Classes----x------- */
+
+
+
+/*-------------- nav bar ------------*/
+
+.nav {
+    background: white;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
+    transition: 1s ease-in;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 0rem 1rem;
+    text-decoration: none;
+    display: block;
+    font-family: var(--gothic);
+}
+ul {
+    list-style: none;
+}
+.nav .toggle-collapse {
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons{
+    font-size: 1.4rem;
+    color:  var(--text-gray);
+}
+.collapse {
+    height: 40rem;
+}
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link {
+     padding: 1.6rem 1rem;
+     font-size: 1.5rem;
+     font-family: var(--abel);
+}
+.nav .nav-menu {
+    justify-content: space-between;
+    display: flex;
+    /* flex-direction: row; */
+}
+.nav .nav-items .nav-link:hover {
+    background: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a {
+    color: var(--white);
+}
+.nav .social {
+    padding: .5rem 1.4rem;
+}
+.nav .social:hover {
+    color:  #a1c4cf;
+}
+/*------x-------- nav bar --------x----*/
+
+/* view port less or equal to 750px */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu {
+        flex-direction: column;
+    }
+    .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+/*x       view port less or equal to 750px       x*/

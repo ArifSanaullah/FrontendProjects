@@ -1,0 +1,22 @@
+h1 {
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
+body {
+    text-transform: lowercase;
+}
+.one {
+    line-height: 1.5em
+}
+.two {
+    letter-spacing: 2px;
+    text-decoration: overline;
+}
+.three {
+    word-spacing: 7px;
+    line-height: 2rem;
+}
+a {
+    font-size: 40px;
+    text-decoration: none;
+}

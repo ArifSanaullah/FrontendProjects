@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "/home/arif/FrontEndProjects"
+	},
+	{
+		"path": "/home/arif/html-and-css"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "FrontEndProjects"
+  }
+}

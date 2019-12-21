@@ -1,0 +1,32 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    background: #fcf6a5;
+    background-color: linear-gradient(#ff2727,#2727ff);
+    height: 100%;
+    width: 100%;
+}
+.container {
+    border: 5px solid #21383b;
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 255, 0);
+    width: 100%;
+    flex-wrap: wrap;
+}
+.home {
+    background: #4fd2e4;
+    flex: 1 1 70px;
+}
+.search {
+    background: #27d182;
+    flex: 1 1 70px;
+}
+.logout {
+    background: #044e35;
+    flex: 3 1 70px;
+}

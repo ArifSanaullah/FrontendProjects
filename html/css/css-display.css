@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+.block {
+    background: blue;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+}
+.inline {
+    background: rgb(255, 255, 255);
+    color: white;
+}

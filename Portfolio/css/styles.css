@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat|Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #ededed;
+  --font-color: #3d4250;
+  --heading-color: #3297fc;
+  --dark-bg-color: #d8d8d8;
+  /* font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif; */
+}
+body {
+  background: var(--bg-color);
+  font-family: montserrat-font;
+}
+img {
+  width: 10em;
+}
+.nav ul {
+  background: var(--dark-bg-color);
+  text-align: center;
+  position: fixed;
+  left: 0em;
+  width: 10vw;
+  max-width: 3em;
+  min-width: 2.8em;
+  height: 100vh;
+  z-index: 100;
+}
+.nav ul li {
+  display: inline-block;
+  margin-top: 3em;
+  width: 75%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  list-style: none;
+}
+.nav img {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+.nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  font-weight: bolder;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: black;
+}
+
+.main-container {
+  position: absolute;
+  left: 3em;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.section .content {
+  margin: 0 auto;
+  width: calc(100vw - 4em);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content h1 {
+  font-size: 4em;
+  font-family: "Lobster", cursive;
+  color: var(--heading-color);
+  font-weight: 580;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+}
+.content p {
+  font-family: "Montserrat", Arial;
+  font-size: 1.2em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 1em;
+}
+.section.about {
+  background: url("../assets/media/images/2.jpg") fixed no-repeat;
+  background-size: cover;
+}
+.section.about .content {
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+}
+.about .content .left, .services.section .left {
+  text-align: left;
+  position: absolute;
+  top: -4em;
+  left: 1.5em;
+  font-size: 2em;
+  font-family: "Montserrat", Arial;
+  font-weight: bolder;
+  color: #d8d8d8;
+}
+.about .content h1 {
+  color: #ededed;
+  margin-bottom: 1em;
+}
+.about .content .right, .services.section .right {
+  width: 50%;
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  overflow: hidden;
+  margin-right: -10em;
+  display: inline-block;
+  font-family: "Montserrat";
+  color: #3297fc;
+}
+.about .right p {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  /* position: relative; */
+}
+.services.section {
+  font-family: "Montserrat", Arial;
+  font-size: 1.2em;
+  background: url("../assets/media/images/6.jpg") fixed no-repeat;
+  background-size: cover;
+  color: #d8d8d8;
+  position: relative;
+}
+.services.section .content {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.services.section .content .left {
+  width: 50%;
+  font-size: 1em;
+  background: lightcoral;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  transform: translate(0%, 25%);
+  text-align: center;
+}
+.services.section .content .right {
+  width: 50%;
+  background: lightgreen;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+.services.section .left h3 {
+  width: 100%;
+  height: 2.5em;
+  display: inline-block;
+  background: lightseagreen;
+  position: relative;
+  left: -15%;
+}
+.services.section .left ul {
+  margin-left: 5em;
+  height: auto;
+  overflow: hidden;
+}
+.services.section .left ul li {
+  text-align: left;
+  list-style: circle;
+  position: relative;
+  left: 25%;
+  height: auto;
+  /* height: 2em; */
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.services.section .content .right h1 {
+  display: inline-block;
+  width: 50vw;
+  position: relative;
+  left: 25%;
+  transform: translate(0%, -200%);
+  overflow: hidden;
+}
+.projects.section {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) ), url('../assets/media/images/4.jpg') no-repeat;
+  background-size: cover;
+}
+.projects.section .content {
+  width: 100%;
+  height: 100%;
+}
+.projects.section .content .left {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+  height: 100%;
+  background-color: aqua;
+}
+.projects.section .content .right {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  height: 100%;
+  overflow: hidden;
+  /* background-color: brown; */
+}
+.projects.section .right ul {
+  width: 100%;
+}
+.projects.section .right ul li {
+  display: inline-block;
+  list-style: none;
+  width: 6em;
+  box-sizing: border-box;
+  height: 8em;
+  margin: 1em 1em;
+  background: hsla(0, 0, 0, 0.5);
+}
+.projects.section .right ul li .show{
+  width: 100%;
+  height: 100%;
+}
+.projects.section .right .one {
+  background: #3297fc;
+}
+.projects.section .right .two {
+  background: #003366;
+}
+.projects.section .right .three {
+  background: #c0c0c0;
+}
+.projects.section .right .four {
+  background: #6699cc;
+}
+.projects.section .right .five {
+  background: #000077;
+}
+.projects.section .right ul li .show h1{
+  font-size: 1em;
+  font-family: "Montserrat", Arial;
+  color: #ededed;
+}
+/* .services.section .left ul {
+  margin: 1em 0em 0em 1em;
+  font-size: 1.5em;
+  color: #d8d8d8;
+}
+.services.section .right h1 {
+  color: #2d313b;
+  font-size: 6em;
+} */
+/* .content .right p {
+    text-align: right;
+    width: 80%;
+    position: relative;
+    left: 20%;
+} */
+
+/*
+.main-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+}
+.section .content {
+    /* margin: 25% 0% 0% 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 80%; 
+}
+.content h1 {
+    font-size: 6em;
+    color: var(--heading-color);
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: inline-block;
+}
+.content p {
+    font-size: 1.2em;
+    word-spacing: 1.2px;
+    line-height: 1.2em;
+    width: 80%;
+    margin-top: 1.5em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+*/
+
+/*
+@media only screen and (min-width: 360px){
+
+    .content {
+        margin: 0% 0% 0% 50%;
+        transform: translate(-50%, -50%);
+    }
+} */

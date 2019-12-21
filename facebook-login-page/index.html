@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-container">
+        <div class="logo">
+          <a href="#"> <h1>facebook</h1> </a>
+        </div>
+        <div class="right-header">
+          <form action="POST">
+            <div class="left">
+              <label for="email">Email or Phone</label>
+              <input type="text" id="email" placeholder="Email" />
+              <input type="checkbox" name="logged" id="logged" /><label
+                for="logged"
+                class="logged"
+                >Keep me Logged in</label
+              >
+            </div>
+            <div class="right">
+              <label for="log-password">Password</label>
+              <input type="password" id="log-password" placeholder="Password" />
+              <input type="submit" value="Login" />
+              <a href="#">Forgotton your password</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="left-container">
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+        <div class="image">
+          <img
+            src="./images/undraw_connected_world_wuay.svg"
+            alt="connected world map"
+          />
+        </div>
+      </div>
+      <div class="right-container">
+        <form action="GET" class="signup">
+          <h1>Create an account</h1>
+          <h4>It's free and always will be.</h4>
+          <div class="username">
+            <input
+              type="text"
+              name="f_name"
+              id="f_name"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="l_name"
+              id="l_name"
+              placeholder="Last Name"
+            />
+          </div>
+          <input type="emal" name="email" placeholder="Email" id="email" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            id="reemail"
+          />
+          <input
+            type="password"
+            name="re-password"
+            id="re-password"
+            placeholder="Re-enter Password"
+          />
+          <input type="date" name="date" id="date" />
+          <div class="gendre">
+            <input type="radio" name="gendre" id="male" value="male" /><label
+            for="male"
+            >Male</label
+          ><input type="radio" name="gendre" id="female" value="female" /><label
+            for="female"
+            >Female</label
+          >
+          </div>
+          <p>
+            By clicking Create an account you agree to our Terms and that you
+            have read our Data Policy, including our Cookie Use.
+          </p>
+          <input type="submit" value="Create an account" />
+          <div class="border"></div>
+          <a href="#">Create a Page for celebrity, band or business.</a>
+        </form>        
+      </div>
+    </div>
+  </body>
+</html>

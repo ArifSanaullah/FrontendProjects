@@ -1,0 +1,39 @@
+body {
+  background: yellow;
+}
+.banner {
+  background: blue;
+}
+h1 {
+  color: white;
+  text-align: center;
+  background: blue;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 566px) {
+  body {
+    background: red;
+  }
+  .banner {
+    background: yellow;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 766px) {
+  body {
+    background: green;
+  }
+  .banner {
+    background: cyan;
+  }
+  h1 {
+    color: magenta;
+    font-size: 60px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

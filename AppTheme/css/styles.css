@@ -1,0 +1,41 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Manjari|Montserrat&display=swap');
+*{
+    border: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --dark-gray: #596261;
+    --pink: #C47DBC;
+    --orchid-pink: #C47DBC;
+    --tea-green: #DDF0B9;
+    --floral-white: #F7FAEB;
+    --monti-font: "Montserrat", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+html,body {
+    font-family: var(--roboto);
+}
+.main-menu-items {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2em;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    font-family: var(--monti-font);
+    padding-top: 0.5em;
+}
+.logo {
+    position: static;
+    padding-left: -50rem;
+    /* bottom: 94.59%; */
+    /* right: 80%; */
+    /* width: 200px; */
+    color: chartreuse;
+}
+.social-links.facebook {
+    color: blue;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /* border: 0; */
+}
+div {
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    color: orange;
+}
+.banner {
+    background: url(./Images/hongkong.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+}
+.header {
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.5)),url("./Images/hongkong.jpg")center/cover no-repeat fixed;
+}
